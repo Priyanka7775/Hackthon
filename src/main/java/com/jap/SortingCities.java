@@ -38,10 +38,10 @@ public class SortingCities
 		
 		
 	}
-	public void greaterThan(String[] city, String[] distance){
+	public void greaterThan(String[] city, int[] distance){
 		String[] greater=new String[distance.length];
-		if(distance>=270){
 			for(int i=0;i<distance.length;i++){
+				if(distance>=270)
 				System.out.println("The city which is greater than or equal to 270km from Zurish is "+city[i]);
 			}
 		}
