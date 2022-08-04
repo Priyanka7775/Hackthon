@@ -20,12 +20,12 @@ public class SortingCitiesTest {
 
     @After
 	 public void tearDown()  {
-		SortingCities= null;
+		sortingCities= null;
     }
 
 	@Test
 	public void givenConvertUpperCases(){
-		String [] actual=s.converUpperCases(city);
+		String [] actual=sortingCities.converUpperCases(city);
 		String [] expected={"Bern","Lucerne","Interlaken","Grinedland","Engelberg","Geneva","Murren",	"Basel","Zermatt","Jungfraujoch"};
 		assertEquals(expected,actual);
 	}
@@ -33,13 +33,13 @@ public class SortingCitiesTest {
 	
 	@Test
 	public void givenFindCityDistance(){
-		String[] actual=s.findCityDistance(distance,city);
+		String[] actual=sortingCities.findCityDistance(distance,city);
 
 		assertEquals("The city which is 52kms from Zurish is Lucerne",actual);
 	}
 	@Test
 	public void givenGreaterThan(){
-		String[] actual=s.greaterThan(city,distance);
+		String[] actual=sortingCities.greaterThan(city,distance);
 		assertEquals("The city which is greater than or equal to 270km from Zurish is Geneva",actual);
 	}
 	
