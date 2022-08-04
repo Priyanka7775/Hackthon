@@ -7,53 +7,57 @@ public class SortingCities
      String [] city={"Bern","Lucerne","Interlaken","Grinedland","Engelberg","Geneva","Murren",	"Basel","Zermatt","Jungfraujoch"};
 	int [] distance={138,52,118,136,85,276,103,87,214,101};
 
-	 SortingCities s= new SortingCities();
-	 s.convetUpperCase(city);
-	 s.printCityAndDistance(city,distance);
-	 s.findCityDistance(city,distance);
-	 s.greaterThan(city,distance);
+	 SortingCities sortingCities= new SortingCities();
+	 sortingCities.convetUpperCase(city);
+	 sortingCities.printCityAndDistance(city,distance);
+	 sortingCities.findCityDistance(city,distance);
+	 sortingCities.greaterThan(city,distance);
+
+	
 	}
 
 	public String convetUpperCase(String[] city){
+	    String sort="";
 	  for(int i=0;i<city.length;i++){	
-		System.out.print(city[i].toUpperCase()+" ");
+		 sort= city[i].toUpperCase();
+		System.out.print(sort+" ");
 		}
-		return city[i].toUpperCase;
-		System.out.println();
+	    return sort ;
+		
 	 }
 	
 	public String printCityAndDistance(String[] city, int[] distance){
-		String[] cityAndDistance=new String[city.length];
+		String sort="";
 		for(int i=0;i<city.length;i++){
-	
+	            sort=city[i];
 			System.out.println(city[i]+":"+distance[i]+"kms");
 		}
-		return cityAndDistance;
-		System.out.println();
+	    return sort;
+		
 	}
 	public  String findCityDistance(String[] city, int[] distance){
-		
+		String sort="";
 		for(int i=0;i<distance.length;i++){
 			if(distance[i]==52){
-			System.out.println("The city which is 52kms from Zurish"+city[i]);
+				sort=city[i];
+			System.out.println("The city which is 52kms from Zurish is "+sort);
 			}
-			return;
-			System.out.println();	
-		}
 		
+		
+		}
+			return sort;
 		
 	}
 	public  String greaterThan(String[] city, int[] distance){
-		
+			String sort="";
 			for(int i=0;i<distance.length;i++){
 				if(distance[i]>=270){
-				System.out.println("The city which is greater than or equal to 270km from Zurish is "+city[i]);
+					sort=city[i];
+				System.out.println("The city which is greater than or equal to 270km from Zurish is "+sort);
 				}
-					return;
-					System.out.println();	
+				
+					
 			}
+				return sort;
 		}
 	}
-
-	
-
