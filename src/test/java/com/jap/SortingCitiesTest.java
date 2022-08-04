@@ -24,5 +24,21 @@ public class SortingCitiesTest {
 		assertEquals(LUCERNE,actual);
 	}
 
+	@Test
+	public void givenPrintCityAndDistance(){
+		String actual=s.printCityAndDistance(Lucerne,52);
+		assertEquals(Lucerne:52,actual);
+	}
+	@Test
+	public void givenFindCityDistance(){
+		String actual=s.findCityDistance(Lucerne,52);
+		assertEquals(Lucerne:52,actual);
+	}
+	@Test
+	public void givenGreaterThan(){
+		String actual=s.greaterThan(Geneva,276);
+		assertEquals(Geneva:276,actual);
+	}
+	
 	} 
 }
