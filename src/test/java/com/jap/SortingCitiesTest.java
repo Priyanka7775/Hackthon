@@ -18,7 +18,10 @@ public class SortingCitiesTest {
 		distance=new int[]{138,52,118,136,85,276,103,87,214,101};
     }
 
-    
+    @After
+	 public void tearDown()  {
+		SortingCities= null;
+    }
 
 	@Test
 	public void givenConvertUpperCases(){
