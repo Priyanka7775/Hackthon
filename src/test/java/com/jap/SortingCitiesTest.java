@@ -34,12 +34,15 @@ public class SortingCitiesTest {
 	@Test
 	public void givenFindCityDistance(){
 		String[] actual=sortingCities.findCityDistance(distance,city);
-
+		String[] city={"Bern","Lucerne","Interlaken","Grinedland","Engelberg","Geneva","Murren",	"Basel","Zermatt","Jungfraujoch"};
+		int [] distance={138,52,118,136,85,276,103,87,214,101};
 		assertEquals("The city which is 52kms from Zurish is Lucerne",actual);
 	}
 	@Test
 	public void givenGreaterThan(){
 		String[] actual=sortingCities.greaterThan(city,distance);
+		String[] city={"Bern","Lucerne","Interlaken","Grinedland","Engelberg","Geneva","Murren",	"Basel","Zermatt","Jungfraujoch"};
+		int [] distance={138,52,118,136,85,276,103,87,214,101};
 		assertEquals("The city which is greater than or equal to 270km from Zurish is Geneva",actual);
 	}
 	
